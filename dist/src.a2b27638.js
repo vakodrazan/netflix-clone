@@ -36435,7 +36435,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    align-items: center;\n    height: 70px;\n    background: #e50914;\n    text-transform: uppercase;\n    padding: 0 32px;\n    font-size: 26px;\n    border: 0;\n    cursor: pointer;\n\n    img {\n        margin-left: 10px;\n        filter: brightness(0) invert(1);\n        width: 24px;\n\n        @media (max-width: 1000px) {\n            width: 16px;\n        }\n    }\n\n    &::hover {\n        background: #f40612;\n    }\n\n    @media (max-width: 100px) {\n        height: 50px;\n        font-size: 16px;\n        margin-top: 20px;\n        font-weight: bold;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    align-items: center;\n    height: 70px;\n    background: #e50914;\n    text-transform: uppercase;\n    padding: 0 32px;\n    font-size: 26px;\n    border: 0;\n    cursor: pointer;\n\n    img {\n        margin-left: 10px;\n        filter: brightness(0) invert(1);\n        width: 24px;\n\n        @media (max-width: 1000px) {\n            width: 16px;\n        }\n    }\n\n    &::hover {\n        background: #f40612;\n    }\n\n    @media (max-width: 1000px) {\n        height: 50px;\n        font-size: 16px;\n        margin-top: 20px;\n        font-weight: bold;\n    }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -41179,7 +41179,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52612" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52873" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
