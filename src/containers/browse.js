@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import * as ROUTES from "../constants/routes"
 import SelectProfileContainer from './profiles'
 import FooterContainer from './footer'
-import { Card, Header, Loading } from '../components';
+import { Card, Header, Loading, Player } from '../components';
 import { FirebaseContext } from '../context/firebase';
 
 import Fuse from "fuse.js"
@@ -75,7 +75,7 @@ export default function BrowseContainer({ slides}) {
                                </Header.Group>
                                <Header.Group>
                                     <Header.Link 
-                                        onClick={() => firebase.auth().signout()}
+                                        onClick={() => firebase.auth().signOut()}
                                     >
                                         Sign out
                                     </Header.Link>
@@ -108,7 +108,12 @@ export default function BrowseContainer({ slides}) {
                                 </Card.Item>
                             ))}
                         </Card.Entities>
-                        <Card.Feature category={category}></Card.Feature>
+                        <Card.Feature category={category}>
+                            <Player>
+                                <Player.Button />
+                                <Player.Video />
+                            </Player>
+                        </Card.Feature>
                     </Card>
                 ))}
            </Card.Group>

@@ -4,15 +4,19 @@ import { App } from './app';
 import { FirebaseContext } from './context/firebase';
 import GlobalStyles from './global-styles';
 
+import dotenv from "dotenv";
+
+dotenv.config();
+
 // import { seedDatabase } from "./seed";
 
 const config = {
-    apiKey: "AIzaSyAnwtdWzJIr12jiHIxjSIMiOi3gB0NJ-Ek",
-    authDomain: "netflix-onja-noeline.firebaseapp.com",
-    projectId: "netflix-onja-noeline",
-    storageBucket: "netflix-onja-noeline.appspot.com",
-    messagingSenderId: "563217788836",
-    appId: "1:563217788836:web:f9ed8874619c978b1a1b31"
+    apiKey: process.env.FB_API_KEY,
+    authDomain: process.env.FB_AUTH_DOMAIN,
+    projectId: process.env.FB_PROJECT_ID,
+    storageBucket: process.env.FB_STORAGE_BUCKET,
+    messagingSenderId: process.env.FB_MESSAGING_SENDER_ID,
+    appId: process.env.FB_APP_ID
 }
 
 const firebase = window.firebase.initializeApp(config);
